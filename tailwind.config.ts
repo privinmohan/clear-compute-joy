@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Space Grotesk", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,20 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        calc: {
+          bg: "hsl(var(--calc-bg))",
+          surface: "hsl(var(--calc-surface))",
+          number: "hsl(var(--calc-number))",
+          "number-hover": "hsl(var(--calc-number-hover))",
+          operator: "hsl(var(--calc-operator))",
+          "operator-hover": "hsl(var(--calc-operator-hover))",
+          function: "hsl(var(--calc-function))",
+          "function-hover": "hsl(var(--calc-function-hover))",
+          display: "hsl(var(--calc-display))",
+          "display-text": "hsl(var(--calc-display-text))",
+          expression: "hsl(var(--calc-expression))",
+          "history-bg": "hsl(var(--calc-history-bg))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +83,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
